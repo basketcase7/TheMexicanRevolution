@@ -3,15 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="cards.css" />
+    <title>Ход событий</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="teststyles.css" />
   </head>
   <body>
-    <div class="container">
-      <img src="photos/forIndex.png" alt="" />
-      <img src="photos/forIndex.png" alt="" />
-      <img src="photos/forIndex.png" alt="" />
-      <img src="photos/forIndex.png" alt="" />
+    <script src="scroll.js"></script>
+    <div class="bar">
+      <button onclick="redirectToIndex()">Главная страница</button>
+      <button onclick="redirectToEvents()">Ход событий</button>
+      <button onclick="redirectToChars()">Личности</button>
+      <button onclick="redirectToValue()">Значение</button>
+      <button onclick="redirectToIlls()">Иллюстрации</button>
+      <button onclick="redirectToTest()">Тест</button>
+      <button onclick="redirectToContacts()">О нас</button>
     </div>
   </body>
 </html>
