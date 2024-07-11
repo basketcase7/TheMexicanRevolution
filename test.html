@@ -11,9 +11,9 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="teststyles.css" />
+    <link rel="stylesheet" href="quiz.css" />
   </head>
   <body>
-    <script src="scroll.js"></script>
     <div class="bar">
       <button onclick="redirectToIndex()">Главная страница</button>
       <button onclick="redirectToEvents()">Ход событий</button>
@@ -23,5 +23,28 @@
       <button onclick="redirectToTest()">Тест</button>
       <button onclick="redirectToContacts()">О нас</button>
     </div>
+
+    <div class="quiz" id="quiz">
+      <div class="quiz-questions" id="questions"></div>
+
+      <div class="quiz-indicator" id="indicator">1/10</div>
+
+      <div class="quiz-results" id="results">
+        <div class="quiz-results-item">
+          <div class="quiz-results-item_question">Вопрос 1</div>
+          <ul class="quiz-result-item_answers">
+            <li>Ответ 1</li>
+            <li>Ответ 2</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="quiz-controls">
+        <button class="btn-next" id="btn-next" disabled>Далее</button>
+        <button class="btn-restart" id="btn-restart">Заново</button>
+      </div>
+    </div>
+    <script src="test.js"></script>
+    <script src="scroll.js"></script>
   </body>
 </html>
