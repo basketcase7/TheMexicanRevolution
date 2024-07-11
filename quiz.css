@@ -1,0 +1,50 @@
+.quiz {
+  margin: 0 auto;
+  width: 600px;
+}
+.quiz-questions,
+.quiz-indicator,
+.quiz-results {
+  margin-bottom: 20px;
+}
+.quiz-questions-item {
+  margin-bottom: 20px;
+}
+.quiz-questions-item_question,
+.quiz-result-item_question {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.quiz-questions-item_answers,
+.quiz-result-item_answers {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.quiz-indicator {
+}
+.btn-next {
+}
+.btn-restart {
+  display: none;
+}
+.quiz-results {
+  display: none;
+}
+
+.questions--hiden,
+.indicator--hiden,
+.btn-next--hiden {
+  display: none;
+}
+
+.results-visible,
+.btn-restart--visible {
+  display: block;
+}
+.answer--invalid {
+  color: red;
+}
+.answer--correct {
+  color: green;
+}
