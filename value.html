@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Значение</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,14 +20,40 @@
   </head>
   <body>
     <script src="scroll.js"></script>
-    <div class="bar">
-      <button onclick="redirectToIndex()">Главная страница</button>
-      <button onclick="redirectToEvents()">Ход событий</button>
-      <button onclick="redirectToChars()">Личности</button>
-      <button onclick="redirectToValue()">Значение</button>
-      <button onclick="redirectToIlls()">Иллюстрации</button>
-      <button onclick="redirectToTest()">Тест</button>
-      <button onclick="redirectToContacts()">О нас</button>
+    <div class="panel">
+      <div id="bg-panel"></div>
+      <div class="bar">
+        <button onclick="redirectToIndex()">
+          <img
+            class="icon-photo"
+            src="icons/icons8-домашняя-страница-20.png"
+          />Главная
+        </button>
+        <button onclick="redirectToEvents()">
+          <img
+            class="icon-photo"
+            src="icons/icons8-след-от-подошвы-20.png"
+          />Ход событий
+        </button>
+        <button onclick="redirectToChars()">
+          <img class="icon-photo" src="icons/icons8-человек-20.png" />Личности
+        </button>
+        <button onclick="redirectToValue()">
+          <img class="icon-photo" src="icons/icons8-монеты-20.png" />Значение
+        </button>
+        <button onclick="redirectToIlls()">
+          <img
+            class="icon-photo"
+            src="icons/icons8-картина-20.png"
+          />Иллюстрации
+        </button>
+        <button onclick="redirectToTest()">
+          <img class="icon-photo" src="icons/icons8-тест-20.png" />Тест
+        </button>
+        <button onclick="redirectToContacts()">
+          <img class="icon-photo" src="icons/icons8-контакты-20.png" />О нас
+        </button>
+      </div>
     </div>
   </body>
 </html>

@@ -1,50 +1,4 @@
-.navbar {
-  width: 100%;
-  height: 70px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
-}
-.navbar .container {
-  height: inherit;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.navbar-menu {
-  list-style-type: none;
-  padding-left: 0;
-  margin-bottom: 0;
-}
-.navbar-menu li a {
-  display: inline-block;
-  color: black;
-  opacity: 0.6;
-  text-decoration: none;
-  padding: 20px;
-  transition: all 0.1s ease-in-out;
-}
-.navbar-menu li {
-  display: inline-block;
-  color: black;
-}
-.navbar-menu li a:hover {
-  opacity: 1;
-}
-.navbar-wrap {
-  display: flex;
-  flex-flow: row nowrap;
-}
-.navbar-brand {
-  font-weight: bold;
-  font-size: 1.8rem;
-  text-decoration: none;
-  color: black;
-  transition: all 0s ease-in-out;
-}
-.navbar-brand:hover {
-  color: coral;
-}
 h1 {
-  font-family: monospace;
   font-size: 5rem;
   margin-bottom: 40px;
   margin-left: 30px;
@@ -54,15 +8,15 @@ h1 {
 }
 #rectangle1 {
   width: 35%;
-  height: 830px;
-  background: rgba(119, 8, 8, 0.884);
+  height: 730px;
+  background-color: rgba(21, 112, 223, 0.548);
   position: absolute;
   left: 1150px;
-  top: 124px;
+  top: 160px;
   border-radius: 30px;
 }
 #rectangle2 {
-  width: 10%;
+  width: 8%;
   height: 1700px;
   position: absolute;
   left: 0;
@@ -72,33 +26,11 @@ h1 {
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
 }
-#rectangle3 {
-  width: 45%;
-  height: 100px;
-  position: absolute;
-  left: 820px;
-  top: 0;
-  background: rgba(7, 134, 34, 0.842);
-  z-index: -1;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-}
-#oval1 {
-  width: 400px;
-  height: 200px;
-  background: rgba(7, 134, 34, 0.842);
-  -webkit-border-radius: 100px / 50px;
-  -moz-border-radius: 100px / 50px;
-  border-radius: 100px / 50px;
-  position: absolute;
-  z-index: -1;
-  left: 700px;
-  top: 1200px;
-}
 #photoIndex {
-  width: 1300px;
-  height: 800px;
-  margin-left: 100px;
+  width: 1000px;
+  height: 600px;
+  margin-left: 220px;
+  margin-top: 130px;
 }
 #indexImg {
   width: 100%;
@@ -116,7 +48,7 @@ h1 {
 }
 #mainButton {
   position: absolute;
-  left: 1325px;
+  left: 1335px;
   top: 825px;
   width: 300px;
   height: 100px;
@@ -125,6 +57,6 @@ h1 {
   font-weight: 600;
   transition: ease-in-out 0.07s;
 }
-#mainButton:hover {
-  background-color: rgba(221, 221, 221, 0.726);
+body {
+  font-family: "Montserrat", sans-serif;
 }
