@@ -43,7 +43,7 @@ h1 {
   width: 900px;
   height: 600px;
   position: absolute;
-  left: 200px;
+  left: 150px;
   top: 250px;
 }
 #forIndex {
@@ -54,26 +54,34 @@ h1 {
 }
 .text-block {
   position: absolute;
-  width: 700px;
-  height: 800px;
+  width: 750px;
+  height: 750px;
   left: 1000px;
+  top: 165px;
   background: rgba(25, 22, 185, 0.568);
   border-radius: 30px;
 }
 #main-text {
   font-size: 2rem;
   color: white;
-  width: 600px;
-  margin-left: 40px;
+  width: 630px;
+  margin-left: 60px;
   margin-top: 30px;
 }
 #events-btn {
   position: absolute;
-  left: 1220px;
+  left: 1240px;
   top: 800px;
   height: 80px;
   width: 250px;
   border-radius: 30px;
   font-size: 1.4rem;
   border: none;
+}
+.more-info {
+  border: none;
+}
+.card {
+  background-color: rgba(25, 128, 255, 0.041);
+  border: 1px solid black;
 }
