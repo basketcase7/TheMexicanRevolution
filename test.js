@@ -1,25 +1,26 @@
 const DATA = [
   {
-    question: "2 + 2?",
+    question:
+      "Каким правилом вы руководствуетесь, чтобы принять важное решение?",
     answers: [
       {
         id: "1",
-        value: "1",
+        value: "Семь раз отмерь — один раз отрежь",
         correct: false,
       },
       {
         id: "2",
-        value: "2",
+        value: "Утро вечера мудренее",
         correct: false,
       },
       {
         id: "3",
-        value: "3",
+        value: "Умный в гору не пойдет, умный гору обойдет",
         correct: false,
       },
       {
         id: "4",
-        value: "4",
+        value: "Лучшая защита — нападение",
         correct: true,
       },
     ],
@@ -124,7 +125,7 @@ const renderResults = () => {
 };
 
 const renderIndicator = (currentStep) => {
-  indicator.innerHTML = `${currentStep}/${DATA.length}`;
+  indicator.innerHTML = `${currentStep} из ${DATA.length}`;
 };
 
 quiz.addEventListener("change", (event) => {

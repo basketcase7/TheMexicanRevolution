@@ -1,10 +1,11 @@
 .quiz {
   margin: 0 auto;
-  width: 600px;
+  width: 1400px;
 }
 .quiz-questions,
 .quiz-indicator,
 .quiz-results {
+  margin-top: 60px;
   margin-bottom: 20px;
 }
 .quiz-questions-item {
@@ -12,24 +13,52 @@
 }
 .quiz-questions-item_question,
 .quiz-result-item_question {
-  font-size: 20px;
+  font-size: 24px;
   margin-bottom: 20px;
 }
 .quiz-questions-item_answers,
 .quiz-result-item_answers {
-  margin: 0;
+  margin: 20px;
   padding: 0;
   list-style: none;
 }
+li {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  font-size: 20px;
+  transition: ease-in-out 0.1s;
+}
+li:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
 .quiz-indicator {
+  font-size: 18px;
 }
 .btn-next {
+  border: 1px solid black;
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+}
+.btn-next:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.answer-input {
+  width: 30px;
 }
 .btn-restart {
   display: none;
+  border: 1px solid black;
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+}
+.btn-restart:hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 .quiz-results {
   display: none;
+  font-size: 22px;
 }
 
 .questions--hiden,
