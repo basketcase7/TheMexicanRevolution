@@ -53,6 +53,7 @@ const DATA = [
 ];
 
 let localResults = {};
+let score = 0;
 
 const quiz = document.getElementById("quiz");
 const questions = document.getElementById("questions");
@@ -95,6 +96,7 @@ const renderResults = () => {
 
     if (!answer.correct && answer.id === localResults[questionIndex]) {
       className = "answer--invalid";
+      score += 1;
     } else if (answer.correct && answer.id === localResults[questionIndex]) {
       className = "answer--correct";
     }
@@ -147,6 +149,7 @@ quiz.addEventListener("click", (event) => {
       btnNext.classList.add("btn-next--hiden");
       btnRestart.classList.add("btn-restart--visible");
       renderResults();
+      handleQuizCompletion(score);
     } else {
       //next
       renderQuestions(nextQuestionIndex);
@@ -164,9 +167,15 @@ quiz.addEventListener("click", (event) => {
     results.classList.remove("results-visible");
     btnNext.classList.remove("btn-next--hiden");
     btnRestart.classList.remove("btn-restart--visible");
-
+    score = 0;
     renderQuestions(0);
   }
 });
 
 renderQuestions(0);
+
+const { saveQuizResult } = require("./mexRevol/back");
+
+function handleQuizCompletion(score) {
+  saveQuizResult(score);
+}

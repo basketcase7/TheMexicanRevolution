@@ -92,3 +92,24 @@ h1 {
   background-color: rgba(25, 128, 255, 0.041);
   border: 1px solid black;
 }
+h2 {
+  margin-left: 8%;
+  margin-top: 10px;
+}
+#soder {
+  margin-left: 9%;
+  font-size: 20px;
+  list-style-type: none;
+}
+.soders {
+  border: 1px solid black;
+  width: 45%;
+  margin-left: 10%;
+  margin-top: 50px;
+  border-radius: 30px;
+  background-color: rgba(25, 128, 255, 0.041);
+}
+a {
+  color: black;
+  text-decoration: none;
+}
