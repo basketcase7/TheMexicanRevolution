@@ -17,6 +17,23 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="teststyles.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          $(".ills img, .ills p").each(function () {
+            var imagePos = $(this).offset().top;
+            var topOfWindow = $(window).scrollTop() + $(window).height();
+            if (imagePos < topOfWindow) {
+              $(this).addClass("show");
+            }
+            if (imagePos > topOfWindow) {
+              $(this).removeClass("show");
+            }
+          });
+        });
+      });
+    </script>
   </head>
   <body>
     <script src="scroll.js"></script>
@@ -51,9 +68,70 @@
           <img class="icon-photo" src="icons/icons8-тест-20.png" />Тест
         </button>
         <button onclick="redirectToContacts()">
-          <img class="icon-photo" src="icons/icons8-контакты-20.png" />О нас
+          <img class="icon-photo" src="icons/icons8-контакты-20.png" />Источники
         </button>
       </div>
+    </div>
+    <h1>Иллюстрации</h1>
+    <div class="ills">
+      <img src="ills/1.webp" class="photoh" alt="" />
+      <p>
+        Молодые солдаты, готовые к мобилизации в федеральные войска в 1913 году.
+        Фото Агустина Касасолы
+      </p>
+      <img src="ills/2.webp" class="phot" alt="" />
+      <p>
+        Идеалист Мексиканской революции Эмилиано Сапата. Фото Агустина Касасолы
+      </p>
+      <img src="ills/3.webp" class="phot" alt="" />
+      <p>Мексиканский Дон Кихот Венустиано Карранса. Фото Агустина Касасолы</p>
+      <img src="ills/4.webp" class="phot" alt="" />
+      <p>
+        Смерть Эмилиано Сапаты Смерть Эмилиано Сапаты. Фото Агустина Касасолы
+      </p>
+      <img src="ills/5.webp" class="phot" alt="" />
+      <p>
+        Повстанческая армия Паскуаля Ороско в 1912 году. Фото Агустина Касасолы
+      </p>
+      <img src="ills/6.webp" class="phot" alt="" />
+      <p>
+        Краткое обещание мира и перемен Франсиско Мадеро вступает в Куэрнаваку.
+        Фото: Агустин Касасола
+      </p>
+      <img src="ills/7.webp" class="phot" alt="" />
+      <p>
+        Франсиско И. Мадеро и его личный ассистент в 1911 году. Фотограф
+        неизвестен
+      </p>
+      <img src="ills/8.webp" class="phot" alt="" />
+      <p>
+        Солдаты Федеральной армии, участвующие в Мексиканской революции, ведут
+        огонь из окопа. Фото Агустина Касасолы
+      </p>
+      <img src="ills/9.webp" class="phot" alt="" />
+      <p>
+        Лучшие генералы Панчо Вильи, Фелипе Анхелес и другие командиры дивизии
+        "Дель Норте". Фото Агустина Касасолы
+      </p>
+      <img src="ills/10.webp" class="phot" alt="" />
+      <p>
+        Он знал, что впереди его ждут годы хаоса, и Панчо Вилья плачет у могилы
+        Франсиско И. Мадеро. Фото Агустина Касасолы
+      </p>
+      <img src="ills/11.webp" class="phot" alt="" />
+      <p>
+        Нерегулярная армия Сапаты сражалась из тени, сапатисты окопались на
+        кукурузном поле. Фото Агустина Касасолы
+      </p>
+      <img src="ills/12.webp" class="phot" alt="" />
+      <p>
+        Уэрта радуется скорой победе генералов Уэрты, Рабаго и Теллера после
+        Второй битвы при Реллено. Фото Агустина Касасолы
+      </p>
+      <img src="ills/13.webp" class="phot" alt="" />
+      <p>Родольфо Фьерро, наемный убийца Панчо Вильи. Фото Агустина Касасолы</p>
+      <img src="ills/14.webp" class="phot" alt="" />
+      <p>Революционеры в поезде. Фотограф неизвестен</p>
     </div>
   </body>
 </html>
